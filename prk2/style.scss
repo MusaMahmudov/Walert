@@ -1,0 +1,250 @@
+main{
+    width: 90%;
+    margin: auto;
+    
+}
+header{
+    z-index: 9999;
+    position: fixed;
+    background: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar{
+    margin: auto;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-left-part{
+    display: flex;
+align-items: center;
+   & h1{
+    color: blue;
+   }
+   & i{
+    margin-right: 10px;
+      font-size: 45px
+    }
+}
+.navbar-center{
+    display: flex;
+    align-items: center;
+   & ul{
+       list-style-type: none;
+       display: flex;
+       gap: 40px;
+       & button{
+        border: none;
+        color: gray;
+        background: white;
+        font-size:15px;
+        &:hover{
+            color: black;
+            cursor: pointer;
+        }
+       }
+    }
+}
+.navbar-right-part{
+    width: 15%;
+    display: flex;
+align-items: center;
+justify-content: end;
+    & button:first-child{
+      margin-right: 30px;  
+   color: blue;
+   border: none;
+   background: white;
+   font-size: 17px;
+    }
+    & button{
+        background: blue;
+        border: none;
+        padding:10px 20px;
+        border-radius:20px ;
+   font-size: 17px;
+
+        color: white;
+   
+    }
+}
+
+.alert{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.alert-left-part{
+    display: flex;
+    width: 30%;
+    position: relative;
+    
+    font-size: 50px;
+    & h1{
+        margin-top: 0px;
+    }
+    & .arrow{
+        position: absolute;
+        margin-top: 120px;
+    transform: translate(455px);
+    background: blue;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & button{
+        border: none;
+        background: transparent;
+    }
+    & i{
+        font-size: 20px;
+        color: white;
+    }
+    }
+  & .small-part{
+    position: absolute;
+    margin-top: 110px;
+    transform: translate(320px);
+    & h1{
+        font-size: 25px !important;
+        color:blue;
+        margin-bottom: 0px;
+
+    }
+    & p{
+        font-size: 10px;
+    }
+  }
+}
+.alert-right-part{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  & .recommend{
+    width: 45%;
+    transform: translate(80%);
+    & ul{
+        list-style: none;
+        position: relative;
+        display: flex;
+        padding: 0px;
+        & li{
+            width: 45px;
+            position: absolute;
+
+            height: 45px;
+            &:first-child{
+                left: 16%;
+             }
+             &:nth-child(2)
+             {
+               left: 32%;
+   
+             }
+             &:nth-child(3)
+             {
+               left: 48%;
+   
+             }
+             &:nth-child(4)
+             {
+               left: 64%;
+   
+             }
+             &:nth-child(5)
+             {
+               left: 80%;
+   
+             }
+
+        }
+        & img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+          
+        }
+
+    }
+  } 
+}
+.image{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    & img{
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+    }
+}
+.service{
+    height: 200px;
+
+   &-heading{
+    width: 80%;
+    display: flex;
+    & h1{
+        margin: 0px;
+        font-size: 50px;
+        width: 25%;
+    }
+    & p{
+       transform: translateY(15px);
+        margin: 0px;
+        width: 40%;
+        margin-left: 100px;
+        color: gray;
+    }
+   }
+}
+.bottom{
+    width: 100%;
+    height: 150px;
+    &-all{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+.first{
+display: flex;
+align-items: center;
+width: 30%;
+
+}
+.second{
+width: 30%;
+
+    display: flex;
+    align-items: center;
+    
+}
+.third{
+width: 30%;
+
+        display: flex;
+        align-items: center;
+        
+}
+.icon-container{
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    & i{
+        font-size: 45px;
+        color: blue;
+    }
+}
